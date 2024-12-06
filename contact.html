@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your external stylesheet -->
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
 </head>
 <body>
     <header>
@@ -12,33 +12,31 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="programs.html">Programs</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
     <main>
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="goal">Fitness Goal:</label>
-            <input type="text" id="goal" name="goal" placeholder="Your Fitness Goal" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Tell us more about your journey" rows="5" required></textarea>
-            
-            <label for="phone">Phone (Optional):</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-            
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
+        <section class="content">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Fitness Journey</p>
+        <p>&copy; 2024 Fitness Journey | All rights reserved.</p>
     </footer>
 </body>
 </html>
+
