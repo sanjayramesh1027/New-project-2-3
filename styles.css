@@ -1,12 +1,57 @@
-form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6f61;
+    color: white;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+form {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 form label {
@@ -15,22 +60,32 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #ff6f61;
+    color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #e65b53;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
 }
